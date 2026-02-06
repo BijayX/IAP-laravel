@@ -1,5 +1,5 @@
 {
-    "name": "bijay/laravel-in-app-purchase",
+    "name": "bijayX/laravel-in-app-purchase",
     "description": "Production-ready Laravel package for server-side verification of in-app purchases and subscriptions for iOS and Android",
     "type": "library",
     "license": "MIT",
