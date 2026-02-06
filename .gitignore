@@ -1,0 +1,46 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.phpunit.result.cache
+/coverage/
+
+# Build
+/build/
+/dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+/storage/logs/
+
+# Cache
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+
+# Composer
+composer.lock
+/vendor/
+
+# Package specific
+google-service-account.json
+*.pem
+*.key
+

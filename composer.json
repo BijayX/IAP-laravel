@@ -1,0 +1,51 @@
+{
+    "name": "bijay/laravel-in-app-purchase",
+    "description": "Production-ready Laravel package for server-side verification of in-app purchases and subscriptions for iOS and Android",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "in-app-purchase",
+        "iap",
+        "apple",
+        "google",
+        "subscription",
+        "verification"
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "google/apiclient": "^2.15",
+        "nesbot/carbon": "^2.0|^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bijay\\Iap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bijay\\Iap\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bijay\\Iap\\Providers\\IapServiceProvider"
+            ],
+            "aliases": {
+                "Iap": "Bijay\\Iap\\Facades\\Iap"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
+
